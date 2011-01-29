@@ -1,0 +1,305 @@
+/*   
+Theme Name: CBPCI Theme, Thematic Child Theme
+Theme URI: 
+Description: Child theme of Thematic 
+Author: Fong Li Heng
+Author URI: 
+Template: thematic
+Version: 1.0
+Tags: Thematic
+.
+Thematic is © Ian Stewart http://themeshaper.com/
+.
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('./2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('../thematic/library/styles/default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+/*style the header*/
+#blog-title span a{
+	background-image:url('./images/banner.jpg');
+	display:block;
+	height:90px;
+	text-indent:-9999px;
+	width: 350px;
+}
+
+#blog-description{
+	background: #9C3 repeat-x;
+	text-align:right;
+	height:20px;
+	padding: 0px;
+	clear:both;
+	border:1px solid;
+	border-color: #9C3;
+	font-style: normal;
+}
+
+#branding {
+	width: 845px;
+	border:1px solid;
+	border-color: #466432;
+	background: #466432;
+	height:110px;
+	padding:0px;
+	clear:both;
+	position:relative;
+	top: -20px;
+}
+
+#main {
+	padding-top: 0px;
+	padding-bottom: 0px;
+/*	background-color:red;*/
+}
+
+#container {
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	background: #FFF; 
+}
+
+/*style the menu*/
+.menu ul {
+	float: right;
+	height:20px;
+	border: none;
+}
+
+#access {
+	background-color:transparent;
+	border: none;
+	height: 20px;
+}
+
+
+.menu ul li.page_item{
+	background-color:transparent;
+	margin:0 ;
+	display:inline;
+	border-left:1px solid #B0CF47;
+	float:left;
+}
+
+.menu ul li.page_item a:link, .menu ul li.page_item a:visited {
+	height:26px;
+	line-height:26px;
+	padding: 0 10px;
+	color: #E0ECB7;
+	text-decoration:none;
+	border: 0px;
+	background-color: #466432;
+}
+
+/*style the drop down menu*/
+.page_item ul.children li{
+	border: 0px;
+}
+
+/*set the colour for the links in the nav menu*/
+.menu ul.children li.page_item a:link, .menu ul.children li.page_item a:visited {
+	color: #E0ECB7;
+}
+
+/*change link colour to white when mouse hovers over it*/
+.menu ul li.page_item a:hover {color:white; background:#466432;}
+
+.menu ul.children li.page_item a:hover {color:white; background:#466432;}
+
+/*style currently selected item*/
+.menu ul li.current_page_item {
+	background-color:transparent;
+	border-left: 1px solid white;
+	color: white; 
+	text-decoration: none;
+	padding-top: 12px;
+}
+
+.menu ul li.current_page_item a:link, .menu ul li.current_page_item a:visited {
+	color: white;
+	border: 0px;
+}
+
+/*increases spacing between currently selected page and the dropdown links*/
+.sf-menu li.current_page_item ul.children {
+	margin-top: 12px;
+}
+
+
+/*hide the title for the home page only*/
+#post-9 h1.entry-title{display:none;}
+
+/*style the breadcrumbs*/
+#yoastbreadcrumb {
+	width: 860px;
+	margin: 0px auto;
+	padding-bottom: 15px;
+}
+
+/*frontpage sidebar*/
+#frontpage-sidebar {
+	text-align: center;
+	margin-top: 5px;
+}
+
+#mission-label {
+	padding-top: 20px;
+	border-top:3px solid #466432;
+}
+
+#mission-label span a {
+	background-image:url('./images/missionlabel.jpg');
+	display:block;
+	height:80px;
+	width: 170px;
+	text-indent:-9999px;
+	margin: auto; 
+}
+
+#weekly-activities h3{
+	font-style:normal;
+	text-transform: uppercase;
+	text-align: right;
+	background-color: #466432;
+	color: white;
+	padding-right: 5px;
+	margin-bottom: 0px;
+}
+
+#weekly-activities-table{
+	border: 0px;
+}
+
+#weekly-activities-table tbody,tbody th,tbody tr,tbody tr td{
+	border: 0px;
+}
+
+.activity-day{
+	text-align: left;
+	color: #466432;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.3em;
+	border-bottom: 1px solid;
+	padding-bottom: 3px;
+	padding-top: 10px;
+	margin-bottom: 0px;
+}
+
+td.activity-time{
+	font-weight: bold;
+	border: 0px;
+}
+
+td.activity {
+	border: 0px;
+}
+
+/*heading styles */
+.entry-content h1 {
+	color: #333;
+	text-decoration: none;
+}
+
+.entry-content h2 {
+	font-weight: bold;
+	color: #324D20; /*#466432;*/
+	margin-top: 15px;
+	text-align: center; 
+	text-transform: uppercase;
+	padding: 5px 0px 10px;
+}
+
+.entry-content h3 {
+	color: #708E16;
+	margin: 5px 0 10px 0;		
+	text-align: center;
+	padding: 5px 0px 10px;
+}
+
+h4 {
+	font-size: 1.4em;
+	color: #333;
+	margin: 0 0 8px 0;		
+	text-align: center;
+}
+
+h5 {
+	font-size: 1.4em;
+	color: #466432;
+	margin: 0 0 15px 0;		
+}
+
+h6 {
+	font: normal 17px Arial, Helvetica, sans-serif;
+	color: #AAA;
+	margin: 0 0 13px 0;
+	text-transform: lowercase;
+}
+
+body {
+	font-size:13px;
+	background-color: #FAFDE7;
+}
+
+/*copyright and contact info*/
+#copyright-info {
+	font-weight: bold;
+	color: #466432;
+}
+
+#siteinfo {
+	padding-bottom: 11px;
+}
+
+#footer-links {
+	float: right;
+	position: relative;
+	top: -18px;
+	width: 250px;
+	text-align: right;
+}
+
+/*secondary aside sidebar*/
+#secondary {
+	border: 1px solid #CCC;
+	margin-bottom: 22px;
+	padding: 18px 0px 0px;
+}
+
+/*content and category styling*/
+.page-title {
+	font-size: 26px;
+}
+
+h2.entry-title {
+	font-size: 1.6em;
+}
+
+/*for backward compatibility*/
+.bible-quote {
+	font-style: italic;
+	color: #123;
+}
+
+.aside tbody, .aside tbody td{
+	border: 0px;
+}
+
