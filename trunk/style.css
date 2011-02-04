@@ -212,6 +212,7 @@ td.activity {
 	border: 0px;
 }
 
+
 /*heading styles */
 .entry-content h1 {
 	color: #333;
@@ -255,6 +256,7 @@ h6 {
 }
 
 body {
+	font-family: 'Ubuntu', serif;
 	font-size:13px;
 	background-color: #FAFDE7;
 }
@@ -299,7 +301,6 @@ h2.entry-title {
 	color: #123;
 }
 
-.aside tbody, .aside tbody td{
+.aside tbody, .aside tbody td {
 	border: 0px;
 }
-
