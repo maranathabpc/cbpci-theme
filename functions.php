@@ -262,4 +262,11 @@ function add_googleanalytics() { ?>
 </script>
 <?php }
 
+function ubuntu_font() {
+?>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold' rel='stylesheet' type='text/css'>
+<?php
+}
+
+add_action('wp_head', 'ubuntu_font');
 ?>
